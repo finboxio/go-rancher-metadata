@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/rancher/go-rancher-metadata/metadata"
+	"github.com/finboxio/go-rancher-metadata/metadata"
 )
 
 const (

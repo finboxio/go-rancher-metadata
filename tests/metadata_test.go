@@ -2,7 +2,7 @@ package metadata_test
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/rancher/go-rancher-metadata/metadata"
+	"github.com/finboxio/go-rancher-metadata/metadata"
 	rmd "github.com/rancher/rancher-metadata"
 	//"reflect"
 	"testing"
