@@ -10,7 +10,7 @@ package main
 import (
 	"time"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"github.com/rancher/go-rancher-metadata/metadata"
 )
 
@@ -21,9 +21,9 @@ const (
 func main() {
 
   m := metadata.NewClient(metadataUrl)
-  
+
   version := "init"
-  
+
 	for {
 		newVersion, err := m.GetVersion()
 		if err != nil {
