@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
+	"github.com/rancher/go-rancher-metadata/metadata"
 	"github.com/sirupsen/logrus"
-	"github.com/finboxio/go-rancher-metadata/metadata"
 )
 
 const (
