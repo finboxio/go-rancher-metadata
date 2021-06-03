@@ -1,4 +1,4 @@
-module github.com/rancher/go-rancher-metadata
+module github.com/finboxio/go-rancher-metadata
 
 go 1.13
 
