@@ -23,12 +23,12 @@ func (m *client) OnChange(intervalSeconds int, do func(string)) {
 		version = v
 		do(version)
 	}
-	interval := time.Duration(intervalSeconds)
+
 	for {
 		if err := m.onChangeFromVersionWithError(version, intervalSeconds, updateVersionAndDo); err != nil {
 			logrus.Errorf("Error reading metadata version: %v", err)
+			time.Sleep(time.Duration(intervalSeconds) * time.Second)
 		}
-		time.Sleep(interval * time.Second)
 	}
 }
 
